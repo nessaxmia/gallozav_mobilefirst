@@ -1,0 +1,294 @@
+* {
+  box-sizing: border-box;
+      margin: 0 auto;
+}
+
+body {
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Oswald:wght@400;700&display=swap');
+}
+
+h1 {
+    font-family: Open Sans, sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+h2 {
+    font-family: Open Sans, sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+h3 {
+    font-family: Open Sans, sans-serif;
+    font-size: 1rem;
+    color: #818181;
+}
+
+h4 {
+    font-family: Open Sans, sans-serif;
+    font-size: 48px;
+    color: white;
+    font-weight: 300;
+}
+
+h5 {
+    font-family: Open Sans, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
+nav {
+    width: 100%;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.hamburger {
+    height: 20px;
+}
+
+.navlinks {
+    display: none;
+}
+
+
+header {
+    background-image: url(../image/hero.jpg);
+    background-size: cover;
+    border: 1px solid red;
+    height: 150px;
+    margin-bottom: 100px;
+}
+
+.ad {
+    display: flex;
+    background-color: #d9e5d9;
+    margin-top: 9.4rem;
+padding: 10px 0px 10px;
+    text-align: right;
+}
+
+.price {
+    display: block;
+    text-align: left;
+    border-left: 1px solid #818181;
+    padding: 5px;
+}
+
+.price p {
+    font-family: Open Sans, sans-serif;
+    font-size: .75rem; 
+}
+
+.row {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    width: 100%;
+    padding: .75rem;
+    margin-bottom: 2rem;
+
+}
+
+.column {
+    text-align: center;
+    width: 12.75rem;
+    
+
+}
+
+.column img {
+    width: 64px;
+}
+
+.column p {
+    font-family: open sans, sans-serif;
+    font-size: .75rem;
+    color: #818181;
+}
+
+.column.desktop {
+    display: none;
+}
+
+.button {
+    text-decoration: underline;
+    margin-top: .6rem;
+}
+
+.largepizza {
+background-image: url(../image/pizza_ad.jpg);
+    background-size: cover;
+    height: 25rem;
+    background-repeat: no-repeat;
+    margin-bottom: 3rem;
+}
+
+.locations {
+   background-color:  #d9e5d9;
+    display: flex;
+    justify-content: center;
+}
+
+.locations h4, footer h4 {
+    color: #818181;
+}
+
+.map {
+    background-image: url(../image/map.jpg);
+    height: 23.3rem;
+    background-size: contain;
+}
+
+.cta {
+    width: 18.4rem;
+  margin-right: 3.75rem;
+    padding-top: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.cta h2 {
+    font-family: Oswald, sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+footer {
+    background-color: black;
+    color: #818181;
+    display: flex;
+    flex-direction: column;
+}
+.underline {
+    text-decoration: underline;
+}
+
+.email {
+    width: 70%;
+    margin-top: 30px;
+    color: #818181;
+}
+
+/* Media Queries */
+@media (min-width: 576px) /* for mobile */{
+    .icons, .navlist, .gallery {
+        display: none;
+    }
+}
+}
+@media (min-width:768px) /* for tablets */{
+     .column.desktop {
+        display: block;
+    }
+}
+@media (min-width: 992px) /* for laptops */{
+    .hamburger, .map, .largepizza{
+   display: none;
+}
+
+ul {
+    list-style-type: none;
+}
+    
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+            
+    }
+    /*use background images for gallery*/
+.galleryimg {
+    width: 25%;
+    height: 275px;
+}
+
+.galleryimg.a {
+    background-image: url(../image/chacutterie.jpg);
+    background-size: cover;
+}
+
+.galleryimg.b {
+    background-image: url(../image/wine.jpg);
+    background-size: cover;
+}
+
+.galleryimg.c {
+    background-image: url(../image/pizza1.jpg);
+    background-size: cover;
+}
+
+.galleryimg.d {
+    background-image: url(../image/pizza2.jpg);
+    background-size: cover;
+}
+
+    
+   .largepizza {
+background-image: url(../image/pizza_ad.jpg);
+    background-size: cover;
+    height: 750px;
+    background-repeat: no-repeat;
+} 
+   
+    nav {
+        display: flex;
+    }
+    .navlinks {
+        display: flex;
+        width: 60%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin-top: 40px;
+  
+}
+
+.navlinks li {
+font-weight: 400;
+    text-transform: uppercase;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-right: 1px solid gray;
+    margin: 0 auto;
+
+}  
+    .icons {
+        display: flex;
+        width: 6rem;
+        justify-content: space-between;
+        margin-top: 2.5rem;
+      
+    }
+    
+}
+@media (min-width: 1200px) /* for large devices */{
+    .column.desktop {
+        display: block;
+    }
+
+.hamburger {
+   display: none;
+}
+   header {
+    background-image: url(../image/hero.jpg);
+    background-size: cover;
+    height: 300px;
+    margin-bottom: 100px;
+}
+    .ad {
+    display: flex;
+    background-color: #d9e5d9;
+    margin-top: 18rem;
+padding: 10px 0px 10px;
+    text-align: right;
+}
+    .footer {
+    display: block;
+    }
+}
+    
+    
